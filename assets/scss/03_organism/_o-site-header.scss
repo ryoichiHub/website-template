@@ -1,0 +1,8 @@
+.site-header {
+    margin-bottom: ($base-spacing * 1);
+
+    &__inner {
+        padding: ($base-spacing * 1) 0;
+        border-bottom: $base-border;
+    }
+}

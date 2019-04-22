@@ -1,0 +1,78 @@
+%a-link {
+    color: $action-color;
+    text-decoration: none;
+    outline: none;
+    transition: $transition-list;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: shade($action-color, 16%);
+    }
+
+    &:visited {
+        color: desaturate($action-color, 16%);
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline:none;
+        noFocusLine: expression(this.onFocus=this.blur());
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        img {
+            opacity: .85;
+        }
+    }
+
+    img {
+        backface-visibility: hidden;
+    }
+
+    img,
+    svg {
+        transition: $transition-list;
+    }
+}
+
+%a-link-button {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $action-color;
+        transition: $transition-list;
+        transform: scaleX(0);
+        transform-origin: left;
+        border-top-right-radius: $small-border-radius;
+        border-top-left-radius: $small-border-radius;
+    }
+}
+
+%a-link-button-hover {
+
+    &:after {
+        background: $action-color;
+        transform: scaleX(1);
+    }
+}
+
+a {
+    @extend %a-link;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 8px 16px;
+
+    @extend %a-link-button;
+}

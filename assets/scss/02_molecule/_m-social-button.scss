@@ -1,0 +1,20 @@
+.social-button {
+    padding: 0;
+
+    &__item {
+        display: inline-block;
+        margin-right: .5em;
+        list-style: none;
+        vertical-align: top;
+    }
+
+    .fb {
+
+        &_iframe_widget {
+
+            > span {
+                vertical-align: baseline !important;
+            }
+        }
+    }
+}

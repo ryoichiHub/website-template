@@ -1,0 +1,21 @@
+.contents {
+    margin: 0 auto;
+    padding: ($base-spacing * 2) 0;
+
+    &__main {
+    }
+
+    &__aside {
+    }
+
+    @include grid-media($sm-grid) {
+
+        &__main {
+            @include grid-column(8);
+        }
+
+        &__aside {
+            @include grid-column(4);
+        }
+    }
+}

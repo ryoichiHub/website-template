@@ -1,0 +1,104 @@
+//************************************
+// Bourbon Settings
+//************************************
+// Font Stack
+$font-stack-japanese-maru: (
+    "Lucida Grande",
+    "segoe UI",
+    "ヒラギノ丸ゴ ProN W4",
+    "Hiragino Maru Gothic ProN",
+    Meiryo,
+    Arial,
+    sans-serif,
+);
+
+$font-stack-japanese-kaku: (
+    "Lucida Grande",
+    "segoe UI",
+    "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    Verdana,
+    sans-serif,
+);
+
+$font-stack-japanese-yu-gothic: (
+    "游ゴシック",
+    "Myriad Pro",
+    Myriad,
+    "Lucida Grande",
+    "segoe UI",
+    "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    Verdana,
+    Arial,
+    sans-serif
+);
+
+$font-stack-japanese-mincho: (
+    "游明朝",
+    "Yu Mincho",
+    "游明朝体",
+    "YuMincho",
+    "ヒラギノ明朝 Pro W3",
+    "Hiragino Mincho Pro",
+    "HiraMinProN-W3",
+    "HGS明朝E",
+    "ＭＳ Ｐ明朝",
+    "MS PMincho",
+    serif
+);
+
+// Typography
+$base-font-family: $font-stack-japanese-kaku;
+$bourbon: (
+    "modular-scale-base": 1rem,
+    "modular-scale-ratio": $augmented-fourth,
+);
+$base-font-size: 16px;
+$base-line-height-ratio: 1.5;
+$base-line-height: ($base-font-size * $base-line-height-ratio);
+$small-font-size: 14px;
+$small-line-height: ($small-font-size * $base-line-height-ratio);
+$x-small-font-size: 13px;
+$x-small-line-height: ($x-small-font-size * $base-line-height-ratio);
+$headline-modular-scale: (
+    "h1":   3,
+    "h2":   2,
+    "h3":   1,
+    "h4":   0,
+    "h5":   -1,
+    "h6":   -2
+);
+
+// Other Sizes
+$base-border-radius: 4px;
+$small-border-radius: $base-border-radius / 2;
+$large-border-radius: $base-border-radius * 2;
+$base-spacing: $base-line-height * 1;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Font Colors
+$base-font-color: $black;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $white;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Shadow
+$base-box-shadow: 0 0 8px 4px rgba($black, .2);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: .3s;
+$base-timing: $ease-in-out-cubic;
+$transition-list: all $base-duration $base-timing;

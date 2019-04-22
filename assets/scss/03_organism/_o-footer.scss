@@ -1,0 +1,14 @@
+.footer {
+    margin-top: ($base-spacing * 1);
+
+    &__inner {
+        padding: ($base-spacing * 1) 0;
+        border-top: $base-border;
+    }
+
+    &__copyright {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}

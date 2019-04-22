@@ -1,0 +1,62 @@
+{
+  "name": "website-template",
+  "version": "1.0.0",
+  "description": "Templates for Web production.",
+  "main": "gulpfile.babel.js",
+  "author": "Ryoichi Shiohama <ryoichi.shiohama@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryoichiHub/website-template"
+  },
+  "engines": {
+    "node": ">=11.x.x",
+    "npm": ">=6.x.x"
+  },
+  "scripts": {
+    "npm-install": "npm install",
+    "yarn-install": "yarn install",
+    "npm-check-updats": "npx ncu -u",
+    "css-coverage": "clairvoyance --css assets/css/main.css --html index.html",
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "clairvoyance": "^0.4.2",
+    "doiuse": "^4.2.0",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csslint": "^1.0.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-inject": "^5.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.29",
+    "imagemin-pngquant": "^7.0.0",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "normalize-scss": "^7.0.1",
+    "npm-check-updates": "^3.1.8",
+    "run-sequence": "^2.2.1",
+    "sassdoc": "^2.7.0"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

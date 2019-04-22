@@ -1,0 +1,73 @@
+%#{$all-buttons} {
+    appearance: none;
+    background-color: $action-color;
+    border: 0;
+    border-radius: $base-border-radius;
+    color: $action-color-text;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1;
+    padding: $small-spacing $base-spacing;
+    text-align: center;
+    text-decoration: none;
+    transition: $transition-list;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-touch-callout: none;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+        color: $action-color-text;
+        background-color: $action-color-hover;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+}
+
+button,
+.button {
+    @extend %#{$all-buttons};
+}
+
+.button {
+
+    &-wrapper {
+        margin-top: $base-spacing;
+        margin-bottom: $base-spacing;
+    }
+
+    &--secondary {
+        color: $action-color-secondary-text;
+        background-color: $action-color-secondary;
+
+        &:hover,
+        &:focus {
+            color: $action-color-secondary-text;
+            background-color: $action-color-secondary-hover;
+        }
+
+        &:disabled {
+
+            &:hover {
+                background-color: $action-color-secondary;
+            }
+        }
+    }
+
+    &--full-width {
+        display: block;
+        width: 100%;
+    }
+}

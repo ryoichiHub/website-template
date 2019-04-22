@@ -1,0 +1,43 @@
+//************************************
+// Neat Settings
+//************************************
+// ===== Breakpoint value =====
+$bp-x-large:    80em; // Base 16px -> 1280px
+$bp-large:      60em; // Base 16px -> 960px
+$bp-small:      48em; // Base 16px -> 768px
+$bp-x-small:    34em; // Base 16px -> 544px
+
+// ===== Neat 2.0 Settings =====
+$grid-columns: 12;
+$gutter: 1.5em;
+
+// Neat grid
+$neat-grid: (
+        columns: $grid-columns,
+        gutter: $gutter,
+);
+
+// Custom grids
+$xs-grid: (
+    columns: $grid-columns,
+    gutter: $gutter,
+    media: $bp-x-small
+);
+
+$sm-grid: (
+    columns: $grid-columns,
+    gutter: $gutter,
+    media: $bp-small
+);
+
+$lg-grid: (
+    columns: $grid-columns,
+    gutter: $gutter,
+    media: $bp-large
+);
+
+$xl-grid: (
+    columns: $grid-columns,
+    gutter: $gutter,
+    media: $bp-x-large
+);

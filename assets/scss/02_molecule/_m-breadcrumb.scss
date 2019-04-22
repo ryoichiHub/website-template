@@ -1,0 +1,31 @@
+.breadcrumb {
+
+    ul {
+        @include clearfix;
+        margin: 0;
+        padding: 0;
+        color: $medium-gray;
+        background-color: $white;
+    }
+
+    li {
+        float: left;
+        list-style: none;
+        font-size: .875rem;
+        color: $medium-gray;
+
+        a {
+            color: $medium-gray;
+        }
+    }
+
+    &__home {
+
+        &:before {
+            content: "\f102";
+            margin-right: .3em;
+            font-family: dashicons;
+            vertical-align: bottom;
+        }
+    }
+}
