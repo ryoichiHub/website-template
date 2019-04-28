@@ -19,7 +19,7 @@
     "dev": "cross-env NODE_ENV=development gulp dev",
     "prod": "cross-env NODE_ENV=production gulp build",
     "tasks": "gulp --tasks",
-    "npm-check-updats": "npx ncu -u",
+    "npm-check-updates": "npx ncu -u",
     "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html",
     "lint:fix": "eslint . --fix",
     "lint": "eslint ."
