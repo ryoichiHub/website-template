@@ -1,0 +1,47 @@
+@layout('layouts/default.edge')
+
+@section('content')
+    <div class="contents">
+      <div class="container container--grid">
+        <main class="contents__main main" role="main">
+          <article class="article">
+            <header>
+              <h1>Article title</h1>
+
+              <ul class="social-button">
+                <li class="social-button__item"><div class="fb-like" data-href="./" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+                <li class="social-button__item"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+
+                <li class="social-button__item"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+
+                <li class="social-button__item"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+              </ul>
+            </header>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <hr>
+            <p>Paragraph</p>
+          </article>
+        </main>
+
+        <aside class="contents__aside site-sidebar" role="complementary">
+          <div class="widget">
+            <h3 class="widget__title">Widget Title</h3>
+
+            <div class="widget__content">
+              <p>Widget contents.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+@endsection
+
+@section('js')
+<script src="assets/js/main.js"></script>
+@endsection

@@ -7,6 +7,7 @@ npm-debug.log
 
 # Build distribution
 bundle.js
+public/
 
 # Composer
 /vendor/
