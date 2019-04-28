@@ -1,78 +1,75 @@
 %a-link {
-    color: $action-color;
-    text-decoration: none;
+  background-color: transparent;
+  color: $action-color;
+  outline: none;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  transition: $transition-list;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 16%);
     outline: none;
-    transition: $transition-list;
+  }
 
-    &:active,
-    &:focus,
-    &:hover {
-        color: shade($action-color, 16%);
-    }
+  &:visited {
+    color: desaturate($action-color, 16%);
+    text-decoration: none;
+  }
 
-    &:visited {
-        color: desaturate($action-color, 16%);
-        text-decoration: none;
-    }
-
-    &:focus {
-        outline:none;
-        noFocusLine: expression(this.onFocus=this.blur());
-    }
-
-    &:hover {
-        text-decoration: none;
-
-        img {
-            opacity: .85;
-        }
-    }
+  &:hover {
+    text-decoration: none;
 
     img {
-        backface-visibility: hidden;
+      opacity: 0.85;
     }
+  }
 
-    img,
-    svg {
-        transition: $transition-list;
-    }
+  img {
+    backface-visibility: hidden;
+  }
+
+  img,
+  svg {
+    transition: $transition-list;
+  }
 }
 
 %a-link-button {
-    position: relative;
+  position: relative;
 
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        background: $action-color;
-        transition: $transition-list;
-        transform: scaleX(0);
-        transform-origin: left;
-        border-top-right-radius: $small-border-radius;
-        border-top-left-radius: $small-border-radius;
-    }
+  &::after {
+    background: $action-color;
+    border-top-left-radius: $small-border-radius;
+    border-top-right-radius: $small-border-radius;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: $transition-list;
+    width: 100%;
+  }
 }
 
 %a-link-button-hover {
-
-    &:after {
-        background: $action-color;
-        transform: scaleX(1);
-    }
+  &::after {
+    background: $action-color;
+    transform: scaleX(1);
+  }
 }
 
 a {
-    @extend %a-link;
+  @extend %a-link;
 }
 
 .link-button {
-    display: inline-block;
-    padding: 8px 16px;
+  display: inline-block;
+  padding: 8px 16px;
 
-    @extend %a-link-button;
+  @extend %a-link-button;
 }

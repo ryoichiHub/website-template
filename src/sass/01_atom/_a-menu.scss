@@ -1,0 +1,9 @@
+menu {
+  display: block;
+
+  menu &,
+  ol &,
+  ul & {
+    margin: 0;
+  }
+}

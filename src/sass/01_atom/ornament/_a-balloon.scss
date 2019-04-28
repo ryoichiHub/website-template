@@ -1,29 +1,30 @@
 .balloon {
-    $balloon-color: $blue;
-    background: $balloon-color;
-    display: block;
-    width: 60px;
-    height: 60px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 60px;
-    vertical-align: middle;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 30px);
-    top: -90px;
+  $balloon-color: $blue;
 
-    &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 15px 10px 0 10px;
-        border-color: $balloon-color transparent transparent transparent;
-        position: absolute;
-        left: calc(50% - 10px);
-        bottom: -10px;
-    }
+  background: $balloon-color;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  height: 60px;
+  left: calc(50% - 30px);
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  top: -90px;
+  vertical-align: middle;
+  width: 60px;
+
+  &::after {
+    border-color: $balloon-color transparent transparent transparent;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    bottom: -10px;
+    content: '';
+    display: block;
+    height: 0;
+    left: calc(50% - 10px);
+    position: absolute;
+    width: 0;
+  }
 }

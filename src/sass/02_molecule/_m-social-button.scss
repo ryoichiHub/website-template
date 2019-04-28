@@ -1,20 +1,18 @@
 .social-button {
-    padding: 0;
+  padding: 0;
 
-    &__item {
-        display: inline-block;
-        margin-right: .5em;
-        list-style: none;
-        vertical-align: top;
+  &__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 0.5em;
+    vertical-align: top;
+  }
+
+  .fb {
+    &_iframe_widget {
+      > span {
+        vertical-align: baseline !important;
+      }
     }
-
-    .fb {
-
-        &_iframe_widget {
-
-            > span {
-                vertical-align: baseline !important;
-            }
-        }
-    }
+  }
 }

@@ -9,20 +9,20 @@ import changed from 'gulp-changed-in-place';
 import { scripts as config, isProd } from './config';
 
 export function esTranspile() {
-    return gulp
-        .src(config.src)
-        .pipe(plumber())
-        .pipe(gulpWebpack(require('../webpack.config.js'), webpack))
-        .pipe(gulp.dest(config.dest));
+  return gulp
+    .src(config.src)
+    .pipe(plumber())
+    .pipe(gulpWebpack(require('../webpack.config.js'), webpack))
+    .pipe(gulp.dest(config.dest));
 }
 
 export function esLint() {
-    return gulp
-        .src(config.src)
-        .pipe(changed({ firstPass: true }))
-        .pipe(gulpEslint())
-        .pipe(gulpEslint.format())
-        .pipe(gulpIf(isProd, gulpEslint.failAfterError()));
+  return gulp
+    .src(config.src)
+    .pipe(changed({ firstPass: true }))
+    .pipe(gulpEslint())
+    .pipe(gulpEslint.format())
+    .pipe(gulpIf(isProd, gulpEslint.failAfterError()));
 }
 
 export const scripts = gulp.series(esLint, esTranspile);

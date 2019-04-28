@@ -10,13 +10,6 @@ caption {
   padding: $base-spacing / 3;
 }
 
-thead {
-
-  th {
-    border-bottom: 1px solid shade($base-border-color, 16%);
-  }
-}
-
 th {
   font-weight: 600;
   padding: $small-spacing 0;
@@ -36,4 +29,10 @@ tr,
 td,
 th {
   vertical-align: middle;
+}
+
+thead {
+  th {
+    border-bottom: 1px solid shade($base-border-color, 16%);
+  }
 }

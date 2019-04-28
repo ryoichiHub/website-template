@@ -22,13 +22,17 @@
     "npm-check-updates": "npx ncu -u",
     "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html",
     "lint:fix": "eslint . --fix",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "stylelint": "stylelint \"src/sass/**/*.scss\"",
+    "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/register": "^7.4.4",
     "babel-loader": "^8.0.5",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.1",
     "browser-sync": "^2.26.5",
     "clairvoyance": "^0.4.2",
     "cross-env": "^5.2.0",
@@ -65,10 +69,12 @@
     "normalize-scss": "^7.0.1",
     "npm-check-updates": "^3.1.8",
     "run-sequence": "^2.2.1",
+    "sanitize.css": "^8.0.0",
     "sassdoc": "^2.7.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^3.0.0",
+    "stylelint-scss": "^3.6.0",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
   },

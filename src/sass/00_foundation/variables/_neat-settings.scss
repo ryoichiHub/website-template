@@ -13,31 +13,31 @@ $gutter: 1.5em;
 
 // Neat grid
 $neat-grid: (
-        columns: $grid-columns,
-        gutter: $gutter,
+  columns: $grid-columns,
+  gutter: $gutter,
 );
 
 // Custom grids
 $xs-grid: (
-    columns: $grid-columns,
-    gutter: $gutter,
-    media: $bp-x-small
+  columns: $grid-columns,
+  gutter: $gutter,
+  media: $bp-x-small
 );
 
 $sm-grid: (
-    columns: $grid-columns,
-    gutter: $gutter,
-    media: $bp-small
+  columns: $grid-columns,
+  gutter: $gutter,
+  media: $bp-small
 );
 
 $lg-grid: (
-    columns: $grid-columns,
-    gutter: $gutter,
-    media: $bp-large
+  columns: $grid-columns,
+  gutter: $gutter,
+  media: $bp-large
 );
 
 $xl-grid: (
-    columns: $grid-columns,
-    gutter: $gutter,
-    media: $bp-x-large
+  columns: $grid-columns,
+  gutter: $gutter,
+  media: $bp-x-large
 );

@@ -1,17 +1,22 @@
 ul,
 ol {
-    padding: 0 0 0 1.5em;
+  padding: 0 0 0 $gutter;
+
+  ol,
+  ul {
+    margin: 0;
+  }
 }
 
 dl {
-    margin: 0;
+  margin: 0;
 }
 
 dt {
-    font-weight: normal;
-    margin: 0;
+  font-weight: normal;
+  margin: 0;
 }
 
 dd {
-    margin: 0;
+  margin: 0 0 0 $gutter;
 }

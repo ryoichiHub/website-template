@@ -1,14 +1,13 @@
 // Style Guide: Atomic Design
+
 /* ########################################################################### *
    # 00 Foundation
  * ########################################################################### */
-@import "00_foundation/lib/bourbon";
-@import "00_foundation/lib/neat";
+@import "../../node_modules/bourbon/core/bourbon";
+@import "../../node_modules/bourbon-neat/core/neat";
 @import "00_foundation/variables/variables";
-@import "00_foundation/lib/normalize";
-@import "00_foundation/lib/normalize/import-now";
+@import "../../node_modules/sanitize.css/sanitize.css";
 @import "00_foundation/typography";
-@import "00_foundation/lib/font-awesome";
 
 /* ########################################################################### *
    # 01 Atom
@@ -24,6 +23,8 @@
 @import "01_atom/a-media";
 @import "01_atom/a-screen-reader";
 @import "01_atom/a-table";
+@import "01_atom/a-codes";
+@import "01_atom/a-menu";
 @import "01_atom/ornament/a-balloon";
 @import "01_atom/ornament/a-kenten";
 // endinject
@@ -63,7 +64,6 @@
    # 05 Page
  * ########################################################################### */
 // page:inject
-@import "05_page/p-blog";
 @import "05_page/p-home";
 @import "05_page/p-page";
 @import "05_page/p-print";

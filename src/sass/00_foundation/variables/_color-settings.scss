@@ -5,7 +5,7 @@
 // Brand Color
 // ========================
 $brand-color: (
-    'wordpress': #21759b,
+  'wordpress': #21759b,
 );
 
 $wordpress:     #21759b;
@@ -25,7 +25,7 @@ $rss:           #ffa500;
 $feedly:        #6cc655;
 $evernote:      #79bd28;
 $vine:          #00b389;
-$amazon:        #ff9900;
+$amazon:        #f90;
 $mixi:          #d1ad59;
 $pinterest:     #bd081c;
 $youtube:       #cd201f;
@@ -52,29 +52,30 @@ $blue:          #207fc0;
 $dark-gray:     tint($black, 16%);
 $medium-gray:   tint($black, 48%);
 $light-gray:    tint($black, 88%);
-$alpha-black:   rgba($black, .1);
-$alpha-white:   rgba($white, .1);
+$alpha-black:   rgba($black, 0.1);
+$alpha-white:   rgba($white, 0.1);
 
 // *** Color Harmonies ***
 $primary: #c6b348;
 
 // Color Wheel
 $color-wheel: (
-    '01': $primary,
-    '02': adjust_hue($primary, 30deg),
-    '03': adjust_hue($primary, 60deg),
-    '04': adjust_hue($primary, 90deg),
-    '05': adjust_hue($primary, 120deg),
-    '06': adjust_hue($primary, 150deg),
-    '07': adjust_hue($primary, 180deg),
-    '08': adjust_hue($primary, 210deg),
-    '09': adjust_hue($primary, 240deg),
-    '10': adjust_hue($primary, 270deg),
-    '11': adjust_hue($primary, 300deg),
-    '12': adjust_hue($primary, 330deg),
+  '01': $primary,
+  '02': adjust_hue($primary, 30deg),
+  '03': adjust_hue($primary, 60deg),
+  '04': adjust_hue($primary, 90deg),
+  '05': adjust_hue($primary, 120deg),
+  '06': adjust_hue($primary, 150deg),
+  '07': adjust_hue($primary, 180deg),
+  '08': adjust_hue($primary, 210deg),
+  '09': adjust_hue($primary, 240deg),
+  '10': adjust_hue($primary, 270deg),
+  '11': adjust_hue($primary, 300deg),
+  '12': adjust_hue($primary, 330deg),
 );
+
 @function color-wheel($key) {
-    @return map-get($color-wheel, $key);
+  @return map-get($color-wheel, $key);
 }
 
 // Dyad (Complementary)
@@ -93,7 +94,6 @@ $split-complement-first:    adjust-hue($dyad, 30deg);
 $split-complement-second:   adjust-hue($dyad, -30deg);
 
 $secondary: $dyad;
-
 
 // Link and Button color.
 $action-color:                  $primary;

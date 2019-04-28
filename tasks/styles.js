@@ -12,28 +12,28 @@ import { sass as config, isProd } from './config';
  * SCSS -> CSS
  */
 export function sass() {
-    return gulp
-        .src(config.src)
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(gulpSass().on('error', gulpSass.logError))
-        .pipe(cleancss())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(config.dest));
+  return gulp
+    .src(config.src)
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(gulpSass().on('error', gulpSass.logError))
+    .pipe(cleancss())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.dest));
 }
 
 /**
  * Stylelint
  */
 export function stylelint() {
-    return gulp
-        .src(config.src)
-        .pipe(changed({ firstPass: true }))
-        .pipe(gulpStylelint({
-            failAfterError: isProd,
-            reporters: [{ formatter: 'verbose', console: true }],
-            syntax: 'scss'
-        }));
+  return gulp
+    .src(config.src)
+    .pipe(changed({ firstPass: true }))
+    .pipe(gulpStylelint({
+      failAfterError: isProd,
+      reporters: [{ formatter: 'verbose', console: true }],
+      syntax: 'scss'
+    }));
 }
 
 // export const styles = gulp.series(stylelint, sass);
