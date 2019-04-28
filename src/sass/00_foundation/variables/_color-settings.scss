@@ -52,8 +52,8 @@ $blue:          #207fc0;
 $dark-gray:     tint($black, 16%);
 $medium-gray:   tint($black, 48%);
 $light-gray:    tint($black, 88%);
-$alpha-black:   rgba($black, 0.1);
-$alpha-white:   rgba($white, 0.1);
+$alpha-black:   rgba($black, .1);
+$alpha-white:   rgba($white, .1);
 
 // *** Color Harmonies ***
 $primary: #c6b348;

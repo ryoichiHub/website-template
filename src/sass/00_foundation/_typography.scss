@@ -49,10 +49,10 @@ h6 {
 @each $headline, $scale in $headline-modular-scale {
   #{$headline},
   .#{$headline} {
-    font-size: modular-scale($scale, 0.8125rem, $minor-third);
+    font-size: modular-scale($scale, .8125rem, $minor-third);
 
     @include grid-media($xs-grid) {
-      font-size: modular-scale($scale, 0.875rem, $minor-third);
+      font-size: modular-scale($scale, .875rem, $minor-third);
     }
 
     @include grid-media($sm-grid) {
@@ -153,9 +153,9 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }

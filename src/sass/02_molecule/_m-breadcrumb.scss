@@ -10,7 +10,7 @@
 
   li {
     float: left;
-    font-size: 0.875rem;
+    font-size: .875rem;
     color: $medium-gray;
     list-style: none;
 
@@ -21,7 +21,7 @@
 
   &__home {
     &::before {
-      margin-right: 0.3em;
+      margin-right: .3em;
       vertical-align: bottom;
       content: "\f102";
     }

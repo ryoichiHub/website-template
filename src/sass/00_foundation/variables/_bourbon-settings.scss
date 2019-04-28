@@ -56,12 +56,12 @@ $bourbon: (
   "modular-scale-base": 1rem,
   "modular-scale-ratio": $augmented-fourth,
 );
-$base-font-size: 16px;
+$base-font-size: 1rem;
 $base-line-height-ratio: 1.5;
 $base-line-height: ($base-font-size * $base-line-height-ratio);
-$small-font-size: 14px;
+$small-font-size: .875rem;
 $small-line-height: ($small-font-size * $base-line-height-ratio);
-$x-small-font-size: 13px;
+$x-small-font-size: .8125rem;
 $x-small-line-height: ($x-small-font-size * $base-line-height-ratio);
 $headline-modular-scale: (
   "h1":   3,
@@ -92,13 +92,13 @@ $base-background-color: $white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Shadow
-$base-box-shadow: 0 0 8px 4px rgba($black, 0.2);
+$base-box-shadow: 0 0 8px 4px rgba($black, .2);
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow: inset 0 1px 3px rgba($black, .06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -.3);
 
 // Animations
-$base-duration: 0.3s;
+$base-duration: .3s;
 $base-timing: $ease-in-out-cubic;
 $transition-list: all $base-duration $base-timing;
