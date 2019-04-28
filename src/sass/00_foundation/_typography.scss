@@ -23,12 +23,12 @@ html {
 }
 
 body {
-  background-color: $base-background-color;
-  color: $base-font-color;
   margin: 0;
   overflow-x: hidden;
+  color: $base-font-color;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+  background-color: $base-background-color;
 }
 
 h1,
@@ -37,9 +37,9 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: $base-line-height-ratio;
-  margin-bottom: $base-spacing;
   margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  line-height: $base-line-height-ratio;
 
   &:first-child {
     margin-top: 0;
@@ -73,14 +73,14 @@ table,
 blockquote,
 hr,
 address {
-  font-size: modular-scale(0);
-  margin-bottom: $base-spacing;
   margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  font-size: modular-scale(0);
 }
 
 hr {
-  border-bottom: $base-border;
   border-top: none;
+  border-bottom: $base-border;
 }
 
 dfn,
@@ -91,34 +91,34 @@ i {
 }
 
 pre {
-  background: $black;
-  color: $white;
+  padding: $base-spacing;
+  overflow: auto;
   font-family: $font-stack-consolas;
   font-size: modular-scale(-1);
-  overflow: auto;
-  padding: $base-spacing;
+  color: $white;
+  background: $black;
 }
 
 code,
 kbd,
 tt,
 var {
-  background: $black;
-  color: $white;
   font-family: $font-stack-consolas;
   font-size: modular-scale(-1);
+  color: $white;
+  background: $black;
 }
 
 abbr,
 acronym {
-  border-bottom: 1px dotted $gray;
   cursor: help;
+  border-bottom: 1px dotted $gray;
 }
 
 mark,
 ins {
-  background: #fff9c0;
   text-decoration: none;
+  background: #fff9c0;
 }
 
 big {
@@ -126,9 +126,9 @@ big {
 }
 
 abbr[title] {
-  border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
+  border-bottom: none;
 }
 
 dfn {
@@ -136,8 +136,8 @@ dfn {
 }
 
 mark {
-  background-color: #ff0;
   color: #000;
+  background-color: #ff0;
 }
 
 small {
@@ -146,9 +146,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 

@@ -1,6 +1,6 @@
 .site-wrapper {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 
   &--drawer-left {
     margin-left: 320px;
@@ -11,7 +11,7 @@
   }
 
   &--drawer-none {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }

@@ -1,18 +1,18 @@
 table {
-  border-collapse: collapse;
+  width: 100%;
   margin: $small-spacing 0;
   table-layout: fixed;
-  width: 100%;
+  border-collapse: collapse;
 }
 
 caption {
-  background-color: $light-gray;
   padding: $base-spacing / 3;
+  background-color: $light-gray;
 }
 
 th {
-  font-weight: 600;
   padding: $small-spacing 0;
+  font-weight: 600;
   text-align: left;
 }
 

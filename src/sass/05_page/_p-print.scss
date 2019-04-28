@@ -2,12 +2,12 @@
    ----------------------------------------------------------------- */
 @media print {
   * {
+    color: #000 !important;
+    text-shadow: none !important;
     background: transparent !important;
 
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    color: #000 !important;
-    text-shadow: none !important;
   }
 
   a {

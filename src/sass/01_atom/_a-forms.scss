@@ -1,18 +1,18 @@
 fieldset {
+  padding: $small-spacing;
+  margin: $base-spacing 0;
   background-color: transparent;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
-  margin: $base-spacing 0;
-  padding: $small-spacing;
 }
 
 legend {
   display: table;
-  font-weight: 600;
-  margin-bottom: $small-spacing / 2;
   max-width: 100%;
   padding: 0;
+  margin-bottom: $small-spacing / 2;
+  font-weight: 600;
   white-space: normal;
 }
 
@@ -78,18 +78,18 @@ input {
 }
 
 select {
-  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: $base-spacing / 3;
+  margin-bottom: $small-spacing;
+  text-transform: none;
   background-color: $base-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
-  box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  max-width: 100%;
-  padding: $base-spacing / 3;
-  text-transform: none;
   transition: border-color $base-duration $base-timing;
-  width: 100%;
+  appearance: none;
 
   &::-webkit-input-placeholder,
   &::-moz-placeholder,
@@ -100,8 +100,8 @@ select {
 
 label {
   display: block;
-  font-weight: 600;
   margin-bottom: $small-spacing / 2;
+  font-weight: 600;
 
   > input,
   > select,
@@ -117,17 +117,17 @@ select:-ms-input-placeholder {
 }
 
 #{$all-text-inputs} {
-  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: $base-spacing / 3;
+  margin-bottom: $small-spacing;
   background-color: $base-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
-  box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  max-width: 100%;
-  padding: $base-spacing / 3;
   transition: border-color $base-duration $base-timing;
-  width: 100%;
+  appearance: none;
 
   &::-webkit-input-placeholder,
   &::-moz-placeholder,
@@ -144,13 +144,13 @@ select:-ms-input-placeholder {
 
   &:focus {
     border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
     outline: none;
+    box-shadow: $form-box-shadow-focus;
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
     cursor: not-allowed;
+    background-color: shade($base-background-color, 5%);
 
     &:hover {
       border: $base-border;
@@ -170,8 +170,8 @@ html [type="button"],
   -webkit-appearance: button;
 
   &::-moz-focus-inner {
-    border-style: none;
     padding: 0;
+    border-style: none;
   }
 
   &:-moz-focusring {
@@ -182,13 +182,13 @@ html [type="button"],
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
   padding: 0;
+  margin-right: $small-spacing / 2;
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
   width: 100%;
+  margin-bottom: $small-spacing;
 }
 
 //select {

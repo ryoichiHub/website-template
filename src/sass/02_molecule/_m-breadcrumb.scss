@@ -2,16 +2,16 @@
   ul {
     @include clearfix;
 
-    background-color: $white;
-    color: $medium-gray;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    color: $medium-gray;
+    background-color: $white;
   }
 
   li {
-    color: $medium-gray;
     float: left;
     font-size: 0.875rem;
+    color: $medium-gray;
     list-style: none;
 
     a {
@@ -21,9 +21,9 @@
 
   &__home {
     &::before {
-      content: "\f102";
       margin-right: 0.3em;
       vertical-align: bottom;
+      content: "\f102";
     }
   }
 }
