@@ -14,6 +14,7 @@ import { styles } from './tasks/styles';
 import { scripts } from './tasks/scripts';
 import { templates } from './tasks/templates';
 import { images } from './tasks/images';
+import { svgSprite } from './tasks/svg';
 import { clean } from './tasks/clean';
 
 import {
@@ -57,6 +58,8 @@ export const build = series(
   clean,
   parallel(styles, templates, scripts, images)
 );
+
+export const generateSvgSprite = svgSprite;
 
 // Task Optimization
 // var runSequence     = require('run-sequence');

@@ -24,7 +24,8 @@
     "lint:fix": "eslint . --fix",
     "lint": "eslint .",
     "stylelint": "stylelint \"src/sass/**/*.scss\"",
-    "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix"
+    "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix",
+    "svg-sprite": "gulp generateSvgSprite"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -59,6 +60,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^9.0.0",
+    "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.2.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-tap": "^1.0.1",

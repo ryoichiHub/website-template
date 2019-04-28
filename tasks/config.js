@@ -29,4 +29,9 @@ export const images = {
   dest: `${DEST_ROOT}/assets/images`
 };
 
+export const svg = {
+  src: `${ASSET_ROOT}/svg/**/*.svg`,
+  dest: `${DEST_ROOT}/assets/svg`
+};
+
 export const isProd = process.env.NODE_ENV === 'production';
