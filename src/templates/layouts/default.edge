@@ -30,7 +30,27 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
+<script>
+  window.WebFontConfig = {
+    google: {
+      families: ['Noto+Serif+JP:200,300,400,500,600,700,900', 'Noto+Sans+JP:100,300,400,500,700,900']
+    },
+    active: function() {
+      sessionStorage.fonts = true;
+    }
+  };
 
+  (function() {
+    const wf = document.createElement('script');
+    wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = true;
+    const s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
 @!section('js')
 
 <!-- Font Awesome 5 -->

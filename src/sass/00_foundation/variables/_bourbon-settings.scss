@@ -50,8 +50,24 @@ $font-stack-japanese-mincho: (
   serif
 );
 
+$font-stack-google-noto-sans-jp: (
+  "Noto Sans CJK JP",
+  "Noto Sans JP",
+  "游ゴシック",
+  "Myriad Pro",
+  Myriad,
+  "Lucida Grande",
+  "segoe UI",
+  "ヒラギノ角ゴ ProN W3",
+  "Hiragino Kaku Gothic ProN",
+  Meiryo,
+  Verdana,
+  Arial,
+  sans-serif
+);
+
 // Typography
-$base-font-family: $font-stack-japanese-kaku;
+$base-font-family: $font-stack-google-noto-sans-jp;
 $bourbon: (
   "modular-scale-base": 1rem,
   "modular-scale-ratio": $augmented-fourth,
