@@ -10,6 +10,11 @@ html {
   line-height: $x-small-line-height;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  visibility: hidden;
+
+  &.wf-active {
+    visibility: visible;
+  }
 
   @include grid-media($xs-grid) {
     font-size: $small-font-size;
