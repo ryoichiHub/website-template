@@ -1,6 +1,5 @@
 # website-template
 Webサイトを作成するためのテンプレート。
-※まだ作りかけなので、ドキュメントも無いしGulpの警告文も表示されます。
 
 ## 目的
 - BrowserSyncによるコーディング全体の効率化
@@ -10,16 +9,16 @@ Webサイトを作成するためのテンプレート。
 
 ## 用意している機能
 - Neatによるグリッドレイアウトシステム
-- RWD対応のモジュラースケール（オリジナル）
-- 余白の統一によるバーティカルリズムの実現
+- RWD対応のモジュラースケール（説明は後日追記）
+- 余白の統一によるバーティカルリズムの実現（未対応）
 - モダンなJavaScriptの記述をBabelでトランスパイル
-- HTMLのテンプレートエンジンを使用（Edge.js）
+- HTMLのテンプレートエンジンを使用（Edge）
 
 ## 必要環境
 - [Node.js](https://nodejs.org)
 - [Yarn](https://yarnpkg.com)
 
-## 利用する手順
+## 使用手順
 ```
 # Node.jsパッケージのインストール
 yarn install
@@ -33,10 +32,43 @@ npm install
 npm run dev
 ```
 
-## パッケージのアップデート
+## npm-scriptsの各コマンド
+package.jsonにいくつかのnpm-scriptsを用意しています。
+
+### JavaScriptファイルのLint＆コードフォーマット
+```
+# ルールに則っていないコードの検出（Lint）
+npm run lint
+
+# Sassファイルのコードフォーマット
+npm run lint:fix
+```
+
+### SassファイルのLint＆コードフォーマット
+```
+# ルールに則っていないコードの検出（Lint）
+npm run stylelint
+
+# Sassファイルのコードフォーマット
+npm run stylelint:fix
+```
+
+### Sassのパーシャルファイルを自動インポート
+`src/sass/`内の各ディレクトリにあるSassパーシャルファイルを`src/sass/import.scss`ファイルに一括で自動インポートします。
+```
+npm run sass-inject
+```
+
+### SVGスプライトの生成
+`src/svg`内のSVGファイルをスプライト化し、`public/assets/svg/sprite.svg`として書き出します。
+```
+npm run svg-sprite
+```
+
+### パッケージのアップデート
 ```
 # npm-check-updatesでpackage.json内のモジュールバージョンを最新へ
-npx ncu -u
+npm run ncu
 
 # Node.jsパッケージのインストール
 yarn install
@@ -44,3 +76,16 @@ yarn install
 # Yarnが無い場合
 npm install
 ```
+
+## 主な利用技術
+- [Edge](https://edge.adonisjs.com/)
+- [Sass](https://sass-lang.com/)
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Gulp.js](https://gulpjs.com/)
+- [webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [ESLint](https://eslint.org/)
+- [stylelint](https://stylelint.io/)
+
+※ESLint、stylelintに[Prettier](https://prettier.io/)を導入するか検討中。
