@@ -20,12 +20,12 @@
     "prod": "cross-env NODE_ENV=production gulp build",
     "tasks": "gulp --tasks",
     "ncu": "npx ncu -u",
-    "lint:fix": "eslint . --fix",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "stylelint": "stylelint \"src/sass/**/*.scss\"",
     "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix",
-    "svg-sprite": "gulp generateSvgSprite",
     "sass-inject": "gulp runSassInject",
+    "svg-sprite": "gulp generateSvgSprite",
     "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html"
   },
   "devDependencies": {
