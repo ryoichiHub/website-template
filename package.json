@@ -37,7 +37,7 @@
     "browser-sync": "^2.26.5",
     "clairvoyance": "^0.4.2",
     "cross-env": "^5.2.0",
-    "del": "^4.1.0",
+    "del": "^4.1.1",
     "doiuse": "^4.2.0",
     "edge.js": "^1.1.4",
     "eslint": "^5.16.0",
