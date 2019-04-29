@@ -4,9 +4,35 @@ import sourcemaps from 'gulp-sourcemaps';
 import cleancss from 'gulp-clean-css';
 import plumber from 'gulp-plumber';
 import gulpStylelint from 'gulp-stylelint';
+import inject from 'gulp-inject';
 import changed from 'gulp-changed-in-place';
 
 import { sass as config, isProd } from './config';
+
+/**
+ * Import Sass partial file.
+ */
+export function sassInject() {
+  const target = gulp.src(config.rootFile);
+
+  return target
+    .pipe(inject(gulp.src([`${config.rootSrc}/01_atom/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// atom:inject', endtag: '// endinject'})
+    )
+    .pipe(inject(gulp.src([`${config.rootSrc}/02_molecule/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// molecule:inject', endtag: '// endinject'})
+    )
+    .pipe(inject(gulp.src([`${config.rootSrc}/03_organism/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// organism:inject', endtag: '// endinject'})
+    )
+    .pipe(inject(gulp.src([`${config.rootSrc}/04_template/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// template:inject', endtag: '// endinject'})
+    )
+    .pipe(inject(gulp.src([`${config.rootSrc}/05_page/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// page:inject', endtag: '// endinject'})
+    )
+    .pipe(gulp.dest(config.rootSrc));
+}
 
 /**
  * SCSS -> CSS
@@ -36,5 +62,4 @@ export function stylelint() {
     }));
 }
 
-// export const styles = gulp.series(stylelint, sass);
-export const styles = gulp.series(sass);
+export const styles = gulp.series(stylelint, sass);

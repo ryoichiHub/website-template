@@ -19,13 +19,14 @@
     "dev": "cross-env NODE_ENV=development gulp dev",
     "prod": "cross-env NODE_ENV=production gulp build",
     "tasks": "gulp --tasks",
-    "npm-check-updates": "npx ncu -u",
-    "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html",
+    "ncu": "npx ncu -u",
     "lint:fix": "eslint . --fix",
     "lint": "eslint .",
     "stylelint": "stylelint \"src/sass/**/*.scss\"",
     "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix",
-    "svg-sprite": "gulp generateSvgSprite"
+    "svg-sprite": "gulp generateSvgSprite",
+    "sass-inject": "gulp runSassInject",
+    "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

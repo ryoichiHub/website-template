@@ -3,6 +3,8 @@ const DEST_ROOT = 'public';
 
 export const sass = {
   src: `${ASSET_ROOT}/sass/**/*.scss`,
+  rootFile: `${ASSET_ROOT}/sass/_import.scss`,
+  rootSrc: `${ASSET_ROOT}/sass/`,
   dest: `${DEST_ROOT}/assets/css`
 };
 

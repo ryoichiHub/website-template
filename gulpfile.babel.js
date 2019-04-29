@@ -1,16 +1,7 @@
-// 参考：https://www.hypertextcandy.com/gulp-4-frontend-development-starter
-
-// const gulp              = require('gulp');
-// const gulpAutoprefixer  = require('gulp-autoprefixer');
-// const gulpCleanCSS      = require('gulp-clean-css');
-// const gulpRename        = require('gulp-rename');
-// const gulpSourcemaps    = require('gulp-sourcemaps');
-// const gulpPostcss       = require('gulp-postcss');
-// const cssnano           = require('cssnano');
 import { series, parallel, watch } from 'gulp';
 
 import { reload, serve } from './tasks/server';
-import { styles } from './tasks/styles';
+import { styles, sassInject } from './tasks/styles';
 import { scripts } from './tasks/scripts';
 import { templates } from './tasks/templates';
 import { images } from './tasks/images';
@@ -59,7 +50,17 @@ export const build = series(
   parallel(styles, templates, scripts, images)
 );
 
+/**
+ * SVGスプライトファイルを作成
+ * @type {svgSprite}
+ */
 export const generateSvgSprite = svgSprite;
+
+/**
+ * Sassのパーシャルファイルを自動インポート
+ * @type {sassInject}
+ */
+export const runSassInject = sassInject;
 
 // Task Optimization
 // var runSequence     = require('run-sequence');

@@ -13,59 +13,59 @@
    # 01 Atom
  * ########################################################################### */
 // atom:inject
-@import "01_atom/a-button";
-@import "01_atom/a-container";
-@import "01_atom/a-forms";
-@import "01_atom/a-grid";
-@import "01_atom/a-label";
-@import "01_atom/a-link";
-@import "01_atom/a-lists";
-@import "01_atom/a-media";
-@import "01_atom/a-screen-reader";
-@import "01_atom/a-table";
-@import "01_atom/a-codes";
-@import "01_atom/a-menu";
-@import "01_atom/ornament/a-balloon";
-@import "01_atom/ornament/a-kenten";
+@import "01_atom/_a-button.scss";
+@import "01_atom/_a-codes.scss";
+@import "01_atom/_a-container.scss";
+@import "01_atom/_a-forms.scss";
+@import "01_atom/_a-grid.scss";
+@import "01_atom/_a-label.scss";
+@import "01_atom/_a-link.scss";
+@import "01_atom/_a-lists.scss";
+@import "01_atom/_a-media.scss";
+@import "01_atom/_a-menu.scss";
+@import "01_atom/_a-screen-reader.scss";
+@import "01_atom/_a-table.scss";
+@import "01_atom/ornament/_a-balloon.scss";
+@import "01_atom/ornament/_a-kenten.scss";
 // endinject
 
 /* ########################################################################### *
    # 02 Molecule
  * ########################################################################### */
 // molecule:inject
-@import "02_molecule/m-breadcrumb";
-@import "02_molecule/m-site-id";
-@import "02_molecule/m-social-button";
+@import "02_molecule/_m-breadcrumb.scss";
+@import "02_molecule/_m-site-id.scss";
+@import "02_molecule/_m-social-button.scss";
 // endinject
 
 /* ########################################################################### *
    # 03 Organism
  * ########################################################################### */
 // organism:inject
-@import "03_organism/o-contents";
-@import "03_organism/o-footer";
-@import "03_organism/o-main";
-@import "03_organism/o-site-footer";
-@import "03_organism/o-site-header";
-@import "03_organism/o-site-nav";
-@import "03_organism/o-site-sidebar";
-@import "03_organism/o-site-wrapper";
-@import "03_organism/o-widget";
+@import "03_organism/_o-contents.scss";
+@import "03_organism/_o-footer.scss";
+@import "03_organism/_o-main.scss";
+@import "03_organism/_o-site-footer.scss";
+@import "03_organism/_o-site-header.scss";
+@import "03_organism/_o-site-nav.scss";
+@import "03_organism/_o-site-sidebar.scss";
+@import "03_organism/_o-site-wrapper.scss";
+@import "03_organism/_o-widget.scss";
 // endinject
 
 /* ########################################################################### *
    # 04 Template
  * ########################################################################### */
 // template:inject
-@import "04_template/t-section";
+@import "04_template/_t-section.scss";
 // endinject
 
 /* ########################################################################### *
    # 05 Page
  * ########################################################################### */
 // page:inject
-@import "05_page/p-home";
-@import "05_page/p-page";
-@import "05_page/p-print";
-@import "05_page/p-single";
+@import "05_page/_p-home.scss";
+@import "05_page/_p-page.scss";
+@import "05_page/_p-print.scss";
+@import "05_page/_p-single.scss";
 // endinject
