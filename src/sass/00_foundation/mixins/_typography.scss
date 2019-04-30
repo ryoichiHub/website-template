@@ -9,7 +9,7 @@ htmlタグ用のルートフォントサイズを計算
   }
 
   @else {
-    @return ($font-size / 16px) * 100;
+    @return ($font-size / 16px) * 100%;
   }
 }
 
