@@ -2,26 +2,6 @@
 // Bourbon Settings
 //************************************
 // Font Stack
-$font-stack-japanese-maru: (
-  "Lucida Grande",
-  "segoe UI",
-  "ヒラギノ丸ゴ ProN W4",
-  "Hiragino Maru Gothic ProN",
-  Meiryo,
-  Arial,
-  sans-serif,
-);
-
-$font-stack-japanese-kaku: (
-  "Lucida Grande",
-  "segoe UI",
-  "ヒラギノ角ゴ ProN W3",
-  "Hiragino Kaku Gothic ProN",
-  Meiryo,
-  Verdana,
-  sans-serif,
-);
-
 $font-stack-japanese-yu-gothic: (
   "游ゴシック",
   "Myriad Pro",
@@ -72,13 +52,10 @@ $bourbon: (
   "modular-scale-base": 1rem,
   "modular-scale-ratio": $augmented-fourth,
 );
-$base-font-size: 1rem;
-$base-line-height-ratio: 1.5;
-$base-line-height: ($base-font-size * $base-line-height-ratio);
-$small-font-size: .875rem;
-$small-line-height: ($small-font-size * $base-line-height-ratio);
-$x-small-font-size: .8125rem;
-$x-small-line-height: ($x-small-font-size * $base-line-height-ratio);
+$base-font-size: 15px;
+$small-font-size: 14px;
+$x-small-font-size: 13px;
+$base-line-height: 1.5;
 $headline-modular-scale: (
   "h1":   3,
   "h2":   2,
@@ -92,7 +69,7 @@ $headline-modular-scale: (
 $base-border-radius: 4px;
 $small-border-radius: $base-border-radius / 2;
 $large-border-radius: $base-border-radius * 2;
-$base-spacing: $base-line-height * 1;
+$base-spacing: $base-line-height * 1rem;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 

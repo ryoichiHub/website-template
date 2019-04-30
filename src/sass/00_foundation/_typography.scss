@@ -6,8 +6,8 @@ body {
 
 html {
   font-family: $base-font-family;
-  font-size: $x-small-font-size;
-  line-height: $x-small-line-height;
+  font-size: root-font-size($x-small-font-size);
+  line-height: $base-line-height;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   visibility: hidden;
@@ -17,13 +17,11 @@ html {
   }
 
   @include grid-media($xs-grid) {
-    font-size: $small-font-size;
-    line-height: $small-line-height;
+    font-size: root-font-size($small-font-size);
   }
 
   @include grid-media($sm-grid) {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-size: root-font-size($base-font-size);
   }
 }
 
@@ -44,7 +42,7 @@ h5,
 h6 {
   margin-top: $base-spacing;
   margin-bottom: $base-spacing;
-  line-height: $base-line-height-ratio;
+  line-height: $base-line-height;
 
   &:first-child {
     margin-top: 0;
