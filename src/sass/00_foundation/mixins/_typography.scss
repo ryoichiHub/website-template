@@ -1,3 +1,6 @@
+/**
+htmlタグ用のルートフォントサイズを計算
+ */
 @function root-font-size($font-size: 16px) {
   $default-percent: 100%;
 
