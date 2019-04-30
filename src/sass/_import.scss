@@ -5,8 +5,9 @@
  * ########################################################################### */
 @import "../../node_modules/bourbon/core/bourbon";
 @import "../../node_modules/bourbon-neat/core/neat";
-@import "00_foundation/variables/variables";
 @import "../../node_modules/sanitize.css/sanitize.css";
+@import "00_foundation/mixins/mixins";
+@import "00_foundation/variables/variables";
 @import "00_foundation/typography";
 
 /* ########################################################################### *

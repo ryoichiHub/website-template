@@ -1,0 +1,10 @@
+/**
+行送り値とフォントサイズの数値からline-heightを計算
+ */
+@function leading($leading: 24, $font-size: 16) {
+  @return ($leading / $font-size);
+}
+
+@mixin leading( $leading: 24, $font-size: 16) {
+  line-height: leading($leading, $font-size);
+}
