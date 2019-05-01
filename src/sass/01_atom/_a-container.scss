@@ -4,6 +4,11 @@
   padding-left: $gutter;
   margin-right: auto;
   margin-left: auto;
+
+  @include grid-media($sm-grid) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .container {
@@ -12,11 +17,6 @@
   &--grid {
     @include grid-visual;
     @include grid-container;
-
-    @include grid-media($sm-grid) {
-      padding-right: 0;
-      padding-left: 0;
-    }
   }
 
   &--full {
