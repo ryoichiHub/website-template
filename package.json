@@ -73,6 +73,7 @@
     "run-sequence": "^2.2.1",
     "sanitize.css": "^8.0.0",
     "sassdoc": "^2.7.0",
+    "smooth-scroll": "^16.0.3",
     "stylelint": "^10.0.1",
     "stylelint-config-recess-order": "^2.0.2",
     "stylelint-config-standard": "^18.3.0",
