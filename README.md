@@ -40,7 +40,7 @@ package.jsonにいくつかのnpm-scriptsを用意しています。
 # ルールに則っていないコードの検出（Lint）
 npm run lint
 
-# Sassファイルのコードフォーマット
+# JavaScriptファイルのコードフォーマット
 npm run lint:fix
 ```
 
