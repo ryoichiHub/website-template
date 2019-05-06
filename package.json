@@ -3,11 +3,17 @@
   "version": "1.0.1",
   "description": "Templates for Web production.",
   "main": "gulpfile.babel.js",
-  "author": "Ryoichi Shiohama <ryoichi.shiohama@gmail.com>",
   "license": "ISC",
+  "homepage": "https://ryoichihub.github.io/website-template/",
+  "bugs": "https://github.com/ryoichiHub/website-template/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/ryoichiHub/website-template"
+  },
+  "author": {
+    "name": "Ryoichi Shiohama",
+    "email": "ryoichi.shiohama@gmail.com",
+    "url": "https://increment-log.com"
   },
   "engines": {
     "node": ">=11.x.x",
