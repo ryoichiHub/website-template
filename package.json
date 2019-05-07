@@ -19,6 +19,9 @@
     "node": ">=11.x.x",
     "npm": ">=6.x.x"
   },
+  "fractal": {
+    "main": "fractal.config.js"
+  },
   "scripts": {
     "setup:npm": "npm install",
     "setup:yarn": "yarn install",
@@ -32,7 +35,8 @@
     "stylelint:fix": "stylelint \"src/sass/**/*.scss\" --fix",
     "sass-inject": "gulp runSassInject",
     "svg-sprite": "gulp generateSvgSprite",
-    "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html"
+    "css-coverage": "clairvoyance --css public/assets/css/main.css --html public/index.html",
+    "design-guide": "npx fractal start --sync"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -75,7 +79,7 @@
     "imagemin-pngquant": "^7.0.0",
     "node-bourbon": "^4.2.8",
     "node-neat": "^2.0.0-beta.0",
-    "npm-check-updates": "^3.1.8",
+    "npm-check-updates": "^3.1.9",
     "run-sequence": "^2.2.1",
     "sanitize.css": "^8.0.0",
     "sassdoc": "^2.7.0",
@@ -83,11 +87,12 @@
     "stylelint": "^10.0.1",
     "stylelint-config-recess-order": "^2.0.2",
     "stylelint-config-standard": "^18.3.0",
-    "stylelint-scss": "^3.6.0",
+    "stylelint-scss": "^3.6.1",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@frctl/fractal": "^1.1.7",
     "cssnano": "^4.1.10"
   }
 }

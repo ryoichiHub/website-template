@@ -65,6 +65,13 @@ npm run sass-inject
 npm run svg-sprite
 ```
 
+### スタイルガイドの起動
+Fractalを使用し、`docs/design-guides`内のファイルを元にBrowsersyncを使用して起動します。
+```
+npm run design-guide
+```
+※暫定機能
+
 ### パッケージのアップデート
 ```
 # npm-check-updatesでpackage.json内のモジュールバージョンを最新へ
