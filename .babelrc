@@ -3,7 +3,8 @@
     [
       "@babel/preset-env",
       {
-        "targets": { "node": "current" }
+        "targets": [">0.25% in JP", "not ie <= 10", "not op_mini all"],
+        "debug": false
       }
     ]
   ]

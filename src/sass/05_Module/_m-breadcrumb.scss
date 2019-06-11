@@ -1,0 +1,29 @@
+.m-breadcrumb {
+  ul {
+    @include clearfix;
+
+    padding: 0;
+    margin: 0;
+    color: $medium-gray;
+    background-color: $white;
+  }
+
+  li {
+    float: left;
+    font-size: .875rem;
+    color: $medium-gray;
+    list-style: none;
+
+    a {
+      color: $medium-gray;
+    }
+  }
+
+  &__home {
+    &::before {
+      margin-right: .3em;
+      vertical-align: bottom;
+      content: "\f102";
+    }
+  }
+}

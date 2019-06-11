@@ -16,7 +16,11 @@ module.exports = {
   devtool: 'source-map',
   module: {
     rules: [
-      { test: /\.js$/, use: 'babel-loader' }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
     ]
-  }
+  },
 };

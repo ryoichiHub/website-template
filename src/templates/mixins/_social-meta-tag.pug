@@ -1,0 +1,8 @@
+mixin socialMetaTag(metas)
+	meta(property="og:title", content=metas.title)
+	meta(property="og:type", content="website")
+	meta(property="og:url", content="http://#{metas.url}")
+	meta(property="og:image", content="http://#{metas.image}/og_image.png")
+	meta(property="og:site_name", content=metas.site_name)
+	meta(property="og:description", content=metas.description)
+	meta(property="fb:app_id", content="任意のID")

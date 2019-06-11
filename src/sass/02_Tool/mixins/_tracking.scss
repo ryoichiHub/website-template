@@ -1,0 +1,10 @@
+/**
+トラッキング値をletter-spacingに変換
+ */
+@function tracking( $target: 0 ) {
+  @return ($target / 1000) * 1em;
+}
+
+@mixin tracking( $target: 0 ) {
+  letter-spacing: tracking($target);
+}

@@ -1,0 +1,25 @@
+%container {
+  max-width: ($bp-x-large + ($gutter * 2));
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include grid-media($sm-grid) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.l-container {
+  @extend %container;
+
+  &--grid {
+    @include grid-visual;
+    @include grid-container;
+  }
+
+  &--full {
+    max-width: none;
+  }
+}

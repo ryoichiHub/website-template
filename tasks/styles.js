@@ -16,20 +16,23 @@ export function sassInject() {
   const target = gulp.src(config.rootFile);
 
   return target
-    .pipe(inject(gulp.src([`${config.rootSrc}/01_atom/**/_*.scss`], {read: false}),
-      {relative: true, starttag: '// atom:inject', endtag: '// endinject'})
+    .pipe(inject(gulp.src([`${config.rootSrc}/01_Setting/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// setting:inject', endtag: '// endinject'})
     )
-    .pipe(inject(gulp.src([`${config.rootSrc}/02_molecule/**/_*.scss`], {read: false}),
-      {relative: true, starttag: '// molecule:inject', endtag: '// endinject'})
+    .pipe(inject(gulp.src([`${config.rootSrc}/02_Tool/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// tool:inject', endtag: '// endinject'})
     )
-    .pipe(inject(gulp.src([`${config.rootSrc}/03_organism/**/_*.scss`], {read: false}),
-      {relative: true, starttag: '// organism:inject', endtag: '// endinject'})
+    .pipe(inject(gulp.src([`${config.rootSrc}/03_Base/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// base:inject', endtag: '// endinject'})
     )
-    .pipe(inject(gulp.src([`${config.rootSrc}/04_template/**/_*.scss`], {read: false}),
-      {relative: true, starttag: '// template:inject', endtag: '// endinject'})
+    .pipe(inject(gulp.src([`${config.rootSrc}/04_Layout/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// layout:inject', endtag: '// endinject'})
     )
-    .pipe(inject(gulp.src([`${config.rootSrc}/05_page/**/_*.scss`], {read: false}),
-      {relative: true, starttag: '// page:inject', endtag: '// endinject'})
+    .pipe(inject(gulp.src([`${config.rootSrc}/05_Module/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// module:inject', endtag: '// endinject'})
+    )
+    .pipe(inject(gulp.src([`${config.rootSrc}/06_Theme/**/_*.scss`], {read: false}),
+      {relative: true, starttag: '// theme:inject', endtag: '// endinject'})
     )
     .pipe(gulp.dest(config.rootSrc));
 }

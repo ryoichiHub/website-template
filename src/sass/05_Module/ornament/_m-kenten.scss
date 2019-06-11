@@ -1,0 +1,12 @@
+.m-kenten {
+  $kenten-color: $blue;
+
+  padding: .2em 0 0;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 1.5, from($kenten-color), color-stop(.5, $kenten-color), color-stop(.9, transparent), to(transparent));
+  background-image: -webkit-radial-gradient(center center, .2rem .2rem, $kenten-color, $kenten-color 95%, transparent 95%, transparent);
+  background-image: radial-gradient(.2rem .2rem at center center, $kenten-color, $kenten-color 95%, transparent);
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-size: 1em .4em;
+  font-feature-settings: normal;
+}

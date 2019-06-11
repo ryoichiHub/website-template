@@ -21,6 +21,7 @@ export const scripts = {
 export const templates = {
   root: `${ASSET_ROOT}/templates`,
   edges: `${ASSET_ROOT}/templates/**/*.edge`,
+  pugs: `${ASSET_ROOT}/templates/**/*.pug`,
   pages: `${ASSET_ROOT}/templates/pages/**/*.edge`,
   data: `${ASSET_ROOT}/templates/data.json`,
   helper: `${ASSET_ROOT}/templates/helper.js`,

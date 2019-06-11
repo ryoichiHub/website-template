@@ -1,0 +1,13 @@
+.m-widget {
+  padding: $base-spacing;
+  margin-bottom: ($base-spacing * 2);
+  background-color: rgba($white, 1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}

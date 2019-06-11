@@ -1,0 +1,28 @@
+.l-site-nav {
+  position: relative;
+  z-index: index($z-indexes, global-nav);
+  margin-top: ($base-spacing * 1);
+  margin-bottom: ($base-spacing * 1);
+
+  &__inner {
+    display: block;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 16px;
+  }
+}

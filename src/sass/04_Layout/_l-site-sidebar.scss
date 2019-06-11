@@ -1,0 +1,13 @@
+.l-site-sidebar {
+  padding: 0 ($base-spacing * 2);
+
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.l-site-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &--drawer-left {
+    margin-left: 320px;
+  }
+
+  &--drawer-right {
+    margin-right: 320px;
+  }
+
+  &--drawer-none {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

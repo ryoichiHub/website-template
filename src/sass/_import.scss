@@ -1,72 +1,80 @@
-// Style Guide: Atomic Design
+// Style Guide: SMACSS & MindBEMding
 
 /* ########################################################################### *
    # 00 Foundation
  * ########################################################################### */
-@import "../../node_modules/bourbon/core/bourbon";
-@import "../../node_modules/bourbon-neat/core/neat";
-@import "../../node_modules/sanitize.css/sanitize.css";
-@import "00_foundation/mixins/mixins";
-@import "00_foundation/variables/variables";
-@import "00_foundation/typography";
+@import "00_Foundation/bourbon";
+@import "00_Foundation/neat";
 
 /* ########################################################################### *
-   # 01 Atom
+   # 01 Setting
  * ########################################################################### */
-// atom:inject
-@import "01_atom/_a-button.scss";
-@import "01_atom/_a-codes.scss";
-@import "01_atom/_a-container.scss";
-@import "01_atom/_a-forms.scss";
-@import "01_atom/_a-grid.scss";
-@import "01_atom/_a-label.scss";
-@import "01_atom/_a-link.scss";
-@import "01_atom/_a-lists.scss";
-@import "01_atom/_a-media.scss";
-@import "01_atom/_a-menu.scss";
-@import "01_atom/_a-screen-reader.scss";
-@import "01_atom/_a-table.scss";
-@import "01_atom/ornament/_a-balloon.scss";
-@import "01_atom/ornament/_a-kenten.scss";
+// setting:inject
+@import "01_Setting/_00-color-settings.scss";
+@import "01_Setting/_01-layer-settings.scss";
+@import "01_Setting/_02-bourbon-settings.scss";
+@import "01_Setting/_03-neat-settings.scss";
 // endinject
 
 /* ########################################################################### *
-   # 02 Molecule
+   # 02 Tool
  * ########################################################################### */
-// molecule:inject
-@import "02_molecule/_m-breadcrumb.scss";
-@import "02_molecule/_m-site-id.scss";
-@import "02_molecule/_m-social-button.scss";
+// tool:inject
+@import "02_Tool/_mixins.scss";
+@import "02_Tool/mixins/_leading.scss";
+@import "02_Tool/mixins/_tracking.scss";
 // endinject
 
 /* ########################################################################### *
-   # 03 Organism
+   # 03 Base
  * ########################################################################### */
-// organism:inject
-@import "03_organism/_o-contents.scss";
-@import "03_organism/_o-footer.scss";
-@import "03_organism/_o-main.scss";
-@import "03_organism/_o-site-footer.scss";
-@import "03_organism/_o-site-header.scss";
-@import "03_organism/_o-site-nav.scss";
-@import "03_organism/_o-site-sidebar.scss";
-@import "03_organism/_o-site-wrapper.scss";
-@import "03_organism/_o-widget.scss";
+// base:inject
+@import "03_Base/_00-sanitize.scss";
+@import "03_Base/_base.scss";
+@import "03_Base/_typography.scss";
+@import "03_Base/Tags/_b-codes.scss";
+@import "03_Base/Tags/_b-forms.scss";
+@import "03_Base/Tags/_b-grid.scss";
+@import "03_Base/Tags/_b-label.scss";
+@import "03_Base/Tags/_b-link.scss";
+@import "03_Base/Tags/_b-lists.scss";
+@import "03_Base/Tags/_b-media.scss";
+@import "03_Base/Tags/_b-menu.scss";
+@import "03_Base/Tags/_b-table.scss";
 // endinject
 
 /* ########################################################################### *
-   # 04 Template
+   # 04 Layout
  * ########################################################################### */
-// template:inject
-@import "04_template/_t-section.scss";
+// layout:inject
+@import "04_Layout/_l-container.scss";
+@import "04_Layout/_l-contents.scss";
+@import "04_Layout/_l-site-footer.scss";
+@import "04_Layout/_l-site-header.scss";
+@import "04_Layout/_l-site-nav.scss";
+@import "04_Layout/_l-site-sidebar.scss";
+@import "04_Layout/_l-site-wrapper.scss";
 // endinject
 
 /* ########################################################################### *
-   # 05 Page
+   # 05 Module
  * ########################################################################### */
-// page:inject
-@import "05_page/_p-home.scss";
-@import "05_page/_p-page.scss";
-@import "05_page/_p-print.scss";
-@import "05_page/_p-single.scss";
+// module:inject
+@import "05_Module/_m-article.scss";
+@import "05_Module/_m-breadcrumb.scss";
+@import "05_Module/_m-button.scss";
+@import "05_Module/_m-section.scss";
+@import "05_Module/_m-site-id.scss";
+@import "05_Module/_m-social-button.scss";
+@import "05_Module/_m-widget.scss";
+@import "05_Module/ornament/_m-balloon.scss";
+@import "05_Module/ornament/_m-kenten.scss";
+// endinject
+
+/* ########################################################################### *
+   # 06 Theme
+ * ########################################################################### */
+// theme:inject
+@import "06_Theme/_p-print.scss";
+@import "06_Theme/WordPress/_t-screen-reader.scss";
 // endinject

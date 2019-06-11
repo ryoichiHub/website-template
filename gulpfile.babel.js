@@ -22,8 +22,12 @@ function watchFiles() {
   // Sass
   watch(sassConfig.src, series(styles, reload));
   // Templates
+  // watch(
+  //   [templatesConfig.edges, templatesConfig.data, templatesConfig.helper],
+  //   series(templates, reload)
+  // );
   watch(
-    [templatesConfig.edges, templatesConfig.data, templatesConfig.helper],
+    [templatesConfig.pugs],
     series(templates, reload)
   );
   // JavaScript
@@ -61,6 +65,8 @@ export const generateSvgSprite = svgSprite;
  * @type {sassInject}
  */
 export const runSassInject = sassInject;
+
+export const templatesA = templates;
 
 // Task Optimization
 // var runSequence     = require('run-sequence');

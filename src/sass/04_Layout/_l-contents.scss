@@ -1,0 +1,22 @@
+.l-contents {
+  padding: ($base-spacing * 2) 0;
+  margin: 0 auto;
+
+  &__main {
+    display: block;
+  }
+
+  &__aside {
+    display: block;
+  }
+
+  @include grid-media($sm-grid) {
+    &__main {
+      @include grid-column(8);
+    }
+
+    &__aside {
+      @include grid-column(4);
+    }
+  }
+}
