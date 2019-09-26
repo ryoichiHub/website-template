@@ -1,0 +1,4 @@
+/src/sass/00_Foundation/_bourbon.scss
+/src/sass/00_Foundation/bourbon/**/*.scss
+/src/sass/00_Foundation/_neat.scss
+/src/sass/00_Foundation/neat/**/*.scss
