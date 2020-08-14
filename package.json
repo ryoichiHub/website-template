@@ -39,7 +39,7 @@
     "design-guide": "npx fractal start --sync"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/register": "^7.10.5",
     "babel-loader": "^8.1.0",
@@ -82,7 +82,7 @@
     "imagemin-pngquant": "^9.0.0",
     "node-bourbon": "^4.2.8",
     "node-neat": "^2.0.0-beta.0",
-    "npm-check-updates": "^7.0.2",
+    "npm-check-updates": "^7.1.0",
     "run-sequence": "^2.2.1",
     "sanitize.css": "^11.0.1",
     "sassdoc": "^2.7.2",
