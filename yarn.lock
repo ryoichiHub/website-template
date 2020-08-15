@@ -1591,7 +1591,7 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@^4.0.0, ansi-styles@^4.1.0:
+ansi-styles@^4.0.0, ansi-styles@^4.1.0, ansi-styles@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.2.1.tgz#90ae75c424d008d2624c5bf29ead3177ebfcf359"
   integrity sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
@@ -3413,6 +3413,16 @@ concat-stream@^1.4.7, concat-stream@^1.5.0, concat-stream@^1.6.0, concat-stream@
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+concat-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-2.0.0.tgz#414cf5af790a48c60ab9be4527d56d5e41133cb1"
+  integrity sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==
+  dependencies:
+    buffer-from "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^3.0.2"
+    typedarray "^0.0.6"
+
 config-chain@^1.1.11, config-chain@^1.1.12:
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/config-chain/-/config-chain-1.1.12.tgz#0fde8d091200eb5e808caf25fe618c02f48e4efa"
@@ -4860,10 +4870,10 @@ eslint@^6.0.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^7.6.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.6.0.tgz#522d67cfaea09724d96949c70e7a0550614d64d6"
-  integrity sha512-QlAManNtqr7sozWm5TF4wIH9gmUm2hE3vNRUvyoYAa4y1l5/jxD/PQStEjBMQtCqZmSep8UxrcecI60hOpe61w==
+eslint@^7.7.0:
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.7.0.tgz#18beba51411927c4b64da0a8ceadefe4030d6073"
+  integrity sha512-1KUxLzos0ZVsyL81PnRN335nDtQ8/vZUD6uMtWbF+5zDtjKcsklIi78XoE0MVL93QvWTu+E5y44VyyCsOMBrIg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -5160,11 +5170,6 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
   dependencies:
     assign-symbols "^1.0.0"
     is-extendable "^1.0.1"
-
-extend@2.*:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/extend/-/extend-2.0.2.tgz#1b74985400171b85554894459c978de6ef453ab7"
-  integrity sha512-AgFD4VU+lVLP6vjnlNfF7OeInLTyeyckCNPEsuxz1vi786UuK/nk6ynPuhn/h+Ju9++TQyr5EpLRI14fc1QtTQ==
 
 extend@^3.0.0, extend@^3.0.2, extend@~3.0.2:
   version "3.0.2"
@@ -7695,7 +7700,7 @@ js-stringify@^1.0.1:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^3.12.0, js-yaml@^3.13.1, js-yaml@^3.8.1:
+js-yaml@^3.12.0, js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.8.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
   integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
@@ -9511,10 +9516,10 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-7.1.0.tgz#7cc4bb85e3712902fe6097168bae6518e69eabae"
-  integrity sha512-xxEObkGnT361LY57GY/+FQUgCARoAeRfIU5M2GxnESoZFMeDv1W7Ck01MBswyTEQgjD4A3HBolcBTYaJsSl03A==
+npm-check-updates@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-7.1.1.tgz#1644a4df8b05958621b23dd669bf09442afa1c27"
+  integrity sha512-mTth44/DK4EmTecdyqEzt6C76sSYdCnDrOo39lNcN1/JWOEkcb+uLQ2CRt0gqkCp6DohALs4RpVBVp+E2i+h8Q==
   dependencies:
     chalk "^4.1.0"
     cint "^8.2.1"
@@ -11233,7 +11238,7 @@ read-pkg@^5.2.0:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-"readable-stream@2 || 3", readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
+"readable-stream@2 || 3", readable-stream@^3.0.2, readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -11725,7 +11730,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@2.*, rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.2, rimraf@^2.6.3:
+rimraf@2, rimraf@2.*, rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.3:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
@@ -11828,12 +11833,12 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-safe-wipe@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/safe-wipe/-/safe-wipe-0.2.4.tgz#53b935d7775b739a924b516c95bb2417fa9a451e"
-  integrity sha1-U7k113dbc5qSS1FslbskF/qaRR4=
+safe-wipe@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/safe-wipe/-/safe-wipe-0.2.5.tgz#dbb331be98d32fee660372999ee5d1ae89ab2fdd"
+  integrity sha512-MwTNf4YrRqCHsB5jUzOVdXoRbW4jkhgTvhlyfiaxox8EP7cOCiD4ydMOQCxDPR9KpvwdBSM2dQHScV1m85k8wQ==
   dependencies:
-    extend "2.*"
+    extend "^3.0.2"
     q "1.*"
     rimraf "2.*"
 
@@ -11896,34 +11901,34 @@ sassdoc-theme-default@^2.8.3:
     nunjucks "^3.1.7"
     sassdoc-extras "^2.5.0"
 
-sassdoc@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/sassdoc/-/sassdoc-2.7.2.tgz#a9cbece0b45706c124ef0aa369a19285698149f5"
-  integrity sha512-5ESdzaH2Pe5pixdEFx5iaVGAK/ahv9tvbR+fiQBOVgLuB8k8dnhEIH87UuGSYaCtrTXEO1d5W1gKsdmJ6Dgiwg==
+sassdoc@^2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/sassdoc/-/sassdoc-2.7.3.tgz#dfde10e6cc090c28578298f985f92df7d4c6ddbc"
+  integrity sha512-ccHlaOVoyGHF41xzj09n9WrECRHSGesFVq2EwX6DGMQdG0+avrxaLiuMLD26QfGyF2qcXVt07w5ifP5KZqy1Qw==
   dependencies:
-    ansi-styles "^3.2.1"
+    ansi-styles "^4.2.1"
     babel-runtime "^6.26.0"
     chalk "^2.4.2"
-    concat-stream "^1.6.2"
+    concat-stream "^2.0.0"
     docopt "^0.6.1"
-    glob "^7.1.4"
+    glob "^7.1.6"
     glob2base "0.0.12"
-    js-yaml "^3.13.1"
+    js-yaml "^3.14.0"
     lodash.difference "^4.5.0"
     lodash.uniq "^4.5.0"
     minimatch "^3.0.4"
-    mkdirp "^0.5.0"
+    mkdirp "^1.0.4"
     multipipe "1.0.2"
-    rimraf "^2.6.2"
-    safe-wipe "0.2.4"
+    rimraf "^3.0.2"
+    safe-wipe "0.2.5"
     sass-convert "^0.5.0"
     sassdoc-theme-default "^2.8.3"
     scss-comment-parser "^0.8.4"
-    strip-indent "^2.0.0"
+    strip-indent "^3.0.0"
     through2 "1.1.1"
-    update-notifier "^2.5.0"
+    update-notifier "^4.1.0"
     vinyl-fs "^3.0.3"
-    vinyl-source-stream "^1.0.0"
+    vinyl-source-stream "1.1.2"
     vinyl-string "^1.0.2"
 
 sax@~1.2.4:
@@ -12852,11 +12857,6 @@ strip-indent@^1.0.0, strip-indent@^1.0.1:
   integrity sha1-DHlipq3vp7vUrDZkYKY4VSrhoKI=
   dependencies:
     get-stdin "^4.0.1"
-
-strip-indent@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
-  integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
 
 strip-indent@^3.0.0:
   version "3.0.0"
@@ -13846,7 +13846,7 @@ upcast@^2.1.1:
   dependencies:
     cross-env "^5.1.0"
 
-update-notifier@^2.0.0, update-notifier@^2.5.0:
+update-notifier@^2.0.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/update-notifier/-/update-notifier-2.5.0.tgz#d0744593e13f161e406acb1d9408b72cad08aff6"
   integrity sha512-gwMdhgJHGuj/+wHJJs9e6PcCszpxR1b236igrOkUofGhqJuG+amlIKwApH1IW1WWl7ovZxsX49lMBWLxSdm5Dw==
@@ -14067,7 +14067,7 @@ vinyl-fs@^3.0.0, vinyl-fs@^3.0.3:
     vinyl "^2.0.0"
     vinyl-sourcemap "^1.1.0"
 
-vinyl-source-stream@^1.0.0:
+vinyl-source-stream@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vinyl-source-stream/-/vinyl-source-stream-1.1.2.tgz#62b53a135610a896e98ca96bee3a87f008a8e780"
   integrity sha1-YrU6E1YQqJbpjKlr7jqH8Aio54A=
